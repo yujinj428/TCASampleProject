@@ -1,0 +1,11 @@
+framework module WMNetwork {
+  umbrella header "WMNetwork.h"
+
+  export *
+  module * { export * }
+}
+
+module WMNetwork.Swift {
+  header "WMNetwork-Swift.h"
+  requires objc
+}

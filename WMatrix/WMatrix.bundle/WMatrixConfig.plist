@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Template</key>
+	<dict>
+		<key>serverGroups</key>
+		<dict>
+			<key>Release</key>
+			<array>
+				<dict>
+					<key>appID</key>
+					<string>inswave.wmatrix.mre</string>
+					<key>localWebServerPort</key>
+					<string>24680</string>
+					<key>name</key>
+					<string>Sample</string>
+					<key>url</key>
+					<string>https://mre.inswave.kr</string>
+				</dict>
+			</array>
+		</dict>
+		<key>startServerGroupName</key>
+		<string>Release</string>
+		<key>useServerSelectScreen</key>
+		<false/>
+	</dict>
+	<key>Template_Debug</key>
+	<dict>
+		<key>serverGroups</key>
+		<dict>
+			<key>Debug</key>
+			<array>
+				<dict>
+					<key>appID</key>
+					<string>inswave.wmatrix.mre</string>
+					<key>localWebServerPort</key>
+					<string>24680</string>
+					<key>name</key>
+					<string>debug</string>
+					<key>url</key>
+					<string>https://mre.inswave.kr</string>
+				</dict>
+			</array>
+			<key>Test</key>
+			<array>
+				<dict>
+					<key>appID</key>
+					<string>inswave.wmatrix.mre</string>
+					<key>localWebServerPort</key>
+					<string>24682</string>
+					<key>name</key>
+					<string>test</string>
+					<key>url</key>
+					<string>https://mre.inswave.kr</string>
+				</dict>
+			</array>
+		</dict>
+		<key>startServerGroupName</key>
+		<string>Debug</string>
+		<key>useServerSelectScreen</key>
+		<true/>
+	</dict>
+	<key>target</key>
+	<string>Template</string>
+</dict>
+</plist>

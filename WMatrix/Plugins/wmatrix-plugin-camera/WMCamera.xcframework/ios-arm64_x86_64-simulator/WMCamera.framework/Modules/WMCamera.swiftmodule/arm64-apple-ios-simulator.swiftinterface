@@ -1,0 +1,28 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name WMCamera
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import AVFoundation
+import CoreLocation
+import CoreServices
+import Foundation
+import Photos
+import Swift
+import UIKit
+@_exported import WMCamera
+import WMatrixMobile
+import WebKit
+import _Concurrency
+import _StringProcessing
+@_inheritsConvenienceInitializers @objc(WMCameraPlugin) @objcMembers public class WMCameraPlugin : ObjectiveC.NSObject, WMatrixMobile.WMatrixPluginProtocol {
+  @objc public var webView: WMatrixMobile.WMatrixWebView?
+  @objc public var viewController: UIKit.UIViewController?
+  @objc public var commandDelegate: (ObjectiveC.NSObject & WMatrixMobile.CommandDelegate)?
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension WMCamera.WMCameraPlugin : UIKit.UIImagePickerControllerDelegate, UIKit.UINavigationControllerDelegate, CoreLocation.CLLocationManagerDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func imagePickerController(_ picker: UIKit.UIImagePickerController, didFinishPickingMediaWithInfo info: [UIKit.UIImagePickerController.InfoKey : Any])
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func imagePickerControllerDidCancel(_ picker: UIKit.UIImagePickerController)
+  @objc dynamic public func locationManager(_ manager: CoreLocation.CLLocationManager, didUpdateLocations locations: [CoreLocation.CLLocation])
+}

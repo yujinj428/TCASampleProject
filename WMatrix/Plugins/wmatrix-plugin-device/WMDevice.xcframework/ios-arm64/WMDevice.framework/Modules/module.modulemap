@@ -1,0 +1,11 @@
+framework module WMDevice {
+  umbrella header "WMDevice.h"
+
+  export *
+  module * { export * }
+}
+
+module WMDevice.Swift {
+  header "WMDevice-Swift.h"
+  requires objc
+}

@@ -1,0 +1,59 @@
+/* 
+  Localizable.strings
+  WebSquareHybridTemplate
+
+  Created by Inswave Systems on 2017. 12. 11..
+  
+*/
+
+/*UX Message*/
+"OFFLINE_FIRSTEXEC" = "Offline mode is available after first running in online mode. Quit the app.";
+"OFFLINE_ALERT" = "The network is not connected. Do you want to run in offline mode? Some features may be limited.";
+
+"FINISH" = "Exit";
+"OK" = "Ok";
+"CANCEL" = "Cancel";
+"EXEC" = "Ok";
+"CLOSE" = "Close";
+"RESTART" = "Restart";
+"SETTINGS" = "Settings";
+"INAPPUPDATE_SIZE_MSG"="Download an additional %ld MB. Would you like to proceed?";
+
+"ENTER_SERVER_INFO" = "Enter server information";
+"EDIT_SERVER_INFO" = "Modify server information";
+"NO_SERVER_GROUP_SELECT" = "No server selected.";
+"ENTER_SERVER" = "Please enter the server address";
+"ENTER_ALL_VALUE" = "Please enter all input values.";
+"CHECK_PORT" = "Please check the port number.";
+
+"CHECK_REFRESH_UPDATE_PROGRESS"="Checking the changes.";
+"CHECK_REFRESH_UPDATE_PROGRESS_RESTART"="The app must be restarted for the changes to take effect.\nClose the app.";
+
+/*ErrorMessage*/
+"error_N000" = "Fail to get config from server. Please try again.";
+"error_N001" = "No response from server. Please try again.";
+"error_N002" = "Fail to generate WebSquare JS files.";
+"error_N003" = "App ID is different from server.";
+"error_N004" = "Server Error is occurred.";
+"error_N005" = "Failed to start W-Matrix.";
+"error_N006" = "Server list configuration failed.";
+
+"error_F000" = "Fail to copy Assets.";
+"error_F001" = "Fail to unzip Engine zip file.";
+"error_F002" = "Fail to unzip Resource zip file.";
+"error_F003" = "Fail to unzip Custom Update zip file.";
+"error_F004" = "Fail to unzip Refresh Update zip file.";
+"error_F005" = "Refresh Update Hash Table is not valid.";
+"error_F006" = "Fail to download Refresh Update File.";
+"error_F007" = "WebSquare License is not valid.";
+"error_F008" = "Failed to load InAppUpdate image.";
+
+"error_W1004" = "W-Matrix License is not valid.";
+"error_W1005" = "Fail to create WebView.";
+
+"error_O1000" = "An error occurred while setting offline mode.";
+"error_O1001" = "There is no W-Matrix setup to use offline mode.";
+
+/*CameraPlugin*/
+"CAMERA_PERMISSION_REJECT_CONFIRM" = "Access to the Camera has been prohibited. please enable it in the Settings app to coninue";
+"PHOTOLIBRARY_PERMISSION_REJECT_CONFIRM" = "Access to the PhotoLibrary has been prohibited. please enable it in the Settings app to coninue";

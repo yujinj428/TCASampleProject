@@ -1,0 +1,11 @@
+framework module WMatrixMobile {
+  umbrella header "WMatrixMobile.h"
+  export *
+
+  module * { export * }
+}
+
+module WMatrixMobile.Swift {
+  header "WMatrixMobile-Swift.h"
+  requires objc
+}

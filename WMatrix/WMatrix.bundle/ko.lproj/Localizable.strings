@@ -1,0 +1,67 @@
+/* 
+  Localizable.strings
+  WebSquareHybridTemplate
+
+  Created by Inswave Systems on 2017. 12. 11..
+  
+*/
+
+/*ErrorMessage*/
+"error_N000" = "서버에서 환경 조회에 실패 했습니다. 잠시후에 다시 시도해 주세요.";
+"error_N001" = "서버에서 응답이 없습니다. 잠시후에 다시 시도해 주세요.";
+"error_N002" = "Websquare Engine JS 파일 생성에 실패했습니다.";
+"error_N003" = "서버와 App의 App ID가 서로 다릅니다. 서버 관리자에게 문의해 주세요.";
+"error_N004" = "Server Error가 발생하였습니다.";
+"error_N005" = "W-Matrix 를 구동하는데 실패하였습니다.";
+"error_N006" = "서버 목록 구성에 실패하였습니다.";
+
+"error_F000" = "Assets 복사에 실패했습니다.";
+"error_F001" = "엔진 ZIP 파일의 압축해제에 실패했습니다.";
+"error_F002" = "Resource ZIP 파일의 압축해제에 실패했습니다.";
+"error_F003" = "Custom Update ZIP 파일의 압축해제에 실패했습니다.";
+"error_F004" = "Refresh Update ZIP 파일의 압축해제에 실패했습니다.";
+"error_F005" = "Refresh Update Hash Table이 유효하지 않습니다.";
+"error_F006" = "Refresh Update 대상 파일을 다운로드하는데 실패하였습니다.";
+"error_F007" = "Websquare License가 유효하지 않습니다.";
+"error_F008" = "InAppUpdate 이미지를 로딩하는데 실패하였습니다.";
+
+"error_W1004" = "W-Matrix License가 유효하지 않습니다.";
+"error_W1005" = "WebView 생성이 실패하였습니다.";
+
+"error_O1000" = "오프라인 모드 설정 중 오류가 발생하였습니다.";
+"error_O1001" = "오프라인 모드를 사용하기 위한 W-Matrix 설정이 되어 있지 않습니다.";
+
+/*UX Message*/
+"FINISH" = "종료";
+"OK" = "확인";
+"CANCEL" = "취소";
+"EXEC" = "확인";
+"CLOSE" = "닫기";
+"SETTINGS" = "설정";
+"RESTART" = "재시작";
+
+"ENTER_SERVER_INFO" = "서버정보 입력";
+"EDIT_SERVER_INFO" = "서버정보 수정";
+"NO_SERVER_GROUP_SELECT" = "선택된 서버가 없습니다.";
+"ENTER_SERVER" = "서버주소를 입력해주세요.";
+"ENTER_ALL_VALUE" = "입력값을 모두 입력해주세요.";
+"CHECK_PORT" = "Port번호를 확인해주세요.";
+
+"OFFLINE_FIRSTEXEC" = "오프라인 모드는 온라인 모드에서 최초 실행 후 사용 가능합니다. App을 종료합니다.";
+"OFFLINE_ALERT" = "네트워크가 연결되어있지 않습니다. 오프라인 모드로 실행하시겠습니까? 일부 기능이 제한될 수 있습니다.";
+
+"permission_denied" = "권한 사용에 동의해 주시지 않으면 App을 시작할 수 없습니다.";
+"permission_denied_rationale" = "권한 사용이 중지되어 있습니다. \nApp을 재설치 하시거나 설정에서 App 초기화를 진행하신 후 실행해 주시기 바랍니다.";
+"error_finish" = "종료";
+"error_retry" = "재시도";
+"exit_or_not" = "종료하시겠습니까?";
+"app_init" = "App이 초기화 된 후 종료됩니다.";
+"copying_resource" = "필요한 파일을 복사중 입니다.";
+"CHECK_REFRESH_UPDATE_PROGRESS" = "변경 사항을 확인중 입니다.";
+"CHECK_REFRESH_UPDATE_PROGRESS_RESTART" = "변경 사항을 적용하기 위해 App을 재시작해야 합니다.\nApp을 종료합니다.";
+"INAPPUPDATE_SIZE_MSG" = "추가로 %@를 다운로드합니다.\n진행하시겠습니까?";
+
+/*CameraPlugin*/
+"CAMERA_PERMISSION_REJECT_CONFIRM" = "Camera에 대한 접근이 금지되어있습니다. 계속하려면 설정 앱에서 활성화하십시오";
+"PHOTOLIBRARY_PERMISSION_REJECT_CONFIRM" = "PhotoLibrary에 대한 접근이 금지되어있습니다. 계속하려면 설정 앱에서 활성화하십시오";
+

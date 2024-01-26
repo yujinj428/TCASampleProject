@@ -1,0 +1,162 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "WMatrixMobile",
+        "printedName": "WMatrixMobile",
+        "declKind": "Import",
+        "moduleName": "WMDevice",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "WMDevice"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/jihoonjang\/W-Matrix-iOS\/WMatrix\/Plugins\/WMDevice\/1.0.1\/WMDevice\/WMDevice.swift",
+      "kind": "StringLiteral",
+      "offset": 1879,
+      "length": 9,
+      "value": "\"wmatrix\""
+    },
+    {
+      "filePath": "\/Users\/jihoonjang\/W-Matrix-iOS\/WMatrix\/Plugins\/WMDevice\/1.0.1\/WMDevice\/WMDevice.swift",
+      "kind": "StringLiteral",
+      "offset": 1908,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jihoonjang\/W-Matrix-iOS\/WMatrix\/Plugins\/WMDevice\/1.0.1\/WMDevice\/WMDevice.swift",
+      "kind": "StringLiteral",
+      "offset": 2452,
+      "length": 9,
+      "value": "\"wmatrix\""
+    },
+    {
+      "filePath": "\/Users\/jihoonjang\/W-Matrix-iOS\/WMatrix\/Plugins\/WMDevice\/1.0.1\/WMDevice\/WMDevice.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3920,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/jihoonjang\/W-Matrix-iOS\/WMatrix\/Plugins\/WMDevice\/1.0.1\/WMDevice\/WMDevice.swift",
+      "kind": "StringLiteral",
+      "offset": 4367,
+      "length": 14,
+      "value": "\"manufacturer\""
+    },
+    {
+      "filePath": "\/Users\/jihoonjang\/W-Matrix-iOS\/WMatrix\/Plugins\/WMDevice\/1.0.1\/WMDevice\/WMDevice.swift",
+      "kind": "StringLiteral",
+      "offset": 4383,
+      "length": 7,
+      "value": "\"Apple\""
+    },
+    {
+      "filePath": "\/Users\/jihoonjang\/W-Matrix-iOS\/WMatrix\/Plugins\/WMDevice\/1.0.1\/WMDevice\/WMDevice.swift",
+      "kind": "StringLiteral",
+      "offset": 4404,
+      "length": 7,
+      "value": "\"model\""
+    },
+    {
+      "filePath": "\/Users\/jihoonjang\/W-Matrix-iOS\/WMatrix\/Plugins\/WMDevice\/1.0.1\/WMDevice\/WMDevice.swift",
+      "kind": "StringLiteral",
+      "offset": 4439,
+      "length": 10,
+      "value": "\"platform\""
+    },
+    {
+      "filePath": "\/Users\/jihoonjang\/W-Matrix-iOS\/WMatrix\/Plugins\/WMDevice\/1.0.1\/WMDevice\/WMDevice.swift",
+      "kind": "StringLiteral",
+      "offset": 4482,
+      "length": 9,
+      "value": "\"version\""
+    },
+    {
+      "filePath": "\/Users\/jihoonjang\/W-Matrix-iOS\/WMatrix\/Plugins\/WMDevice\/1.0.1\/WMDevice\/WMDevice.swift",
+      "kind": "StringLiteral",
+      "offset": 4527,
+      "length": 6,
+      "value": "\"uuid\""
+    },
+    {
+      "filePath": "\/Users\/jihoonjang\/W-Matrix-iOS\/WMatrix\/Plugins\/WMDevice\/1.0.1\/WMDevice\/WMDevice.swift",
+      "kind": "StringLiteral",
+      "offset": 4573,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jihoonjang\/W-Matrix-iOS\/WMatrix\/Plugins\/WMDevice\/1.0.1\/WMDevice\/WMDevice.swift",
+      "kind": "StringLiteral",
+      "offset": 4589,
+      "length": 11,
+      "value": "\"isVirtual\""
+    },
+    {
+      "filePath": "\/Users\/jihoonjang\/W-Matrix-iOS\/WMatrix\/Plugins\/WMDevice\/1.0.1\/WMDevice\/WMDevice.swift",
+      "kind": "StringLiteral",
+      "offset": 4632,
+      "length": 7,
+      "value": "\"appID\""
+    },
+    {
+      "filePath": "\/Users\/jihoonjang\/W-Matrix-iOS\/WMatrix\/Plugins\/WMDevice\/1.0.1\/WMDevice\/WMDevice.swift",
+      "kind": "StringLiteral",
+      "offset": 4673,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jihoonjang\/W-Matrix-iOS\/WMatrix\/Plugins\/WMDevice\/1.0.1\/WMDevice\/WMDevice.swift",
+      "kind": "StringLiteral",
+      "offset": 4689,
+      "length": 6,
+      "value": "\"type\""
+    },
+    {
+      "filePath": "\/Users\/jihoonjang\/W-Matrix-iOS\/WMatrix\/Plugins\/WMDevice\/1.0.1\/WMDevice\/WMDevice.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4745,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/jihoonjang\/W-Matrix-iOS\/WMatrix\/Plugins\/WMDevice\/1.0.1\/WMDevice\/WMDevice.swift",
+      "kind": "StringLiteral",
+      "offset": 4749,
+      "length": 8,
+      "value": "\"tablet\""
+    },
+    {
+      "filePath": "\/Users\/jihoonjang\/W-Matrix-iOS\/WMatrix\/Plugins\/WMDevice\/1.0.1\/WMDevice\/WMDevice.swift",
+      "kind": "StringLiteral",
+      "offset": 4758,
+      "length": 7,
+      "value": "\"phone\""
+    },
+    {
+      "filePath": "\/Users\/jihoonjang\/W-Matrix-iOS\/WMatrix\/Plugins\/WMDevice\/1.0.1\/WMDevice\/WMDevice.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4980,
+      "length": 5,
+      "value": "false"
+    }
+  ]
+}

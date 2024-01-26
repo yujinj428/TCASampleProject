@@ -1,0 +1,11 @@
+framework module WMCamera {
+  umbrella header "WMCamera.h"
+
+  export *
+  module * { export * }
+}
+
+module WMCamera.Swift {
+  header "WMCamera-Swift.h"
+  requires objc
+}

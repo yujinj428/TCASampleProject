@@ -1,0 +1,11 @@
+framework module WMApp {
+  umbrella header "WMApp.h"
+
+  export *
+  module * { export * }
+}
+
+module WMApp.Swift {
+  header "WMApp-Swift.h"
+  requires objc
+}

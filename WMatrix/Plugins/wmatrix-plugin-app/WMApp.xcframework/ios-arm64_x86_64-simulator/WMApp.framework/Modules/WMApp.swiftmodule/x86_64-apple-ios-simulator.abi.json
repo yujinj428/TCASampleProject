@@ -1,0 +1,424 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "WMApp",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "WMApp"
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "WMApp"
+      },
+      {
+        "kind": "Import",
+        "name": "WMatrixMobile",
+        "printedName": "WMatrixMobile",
+        "declKind": "Import",
+        "moduleName": "WMApp"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "WMApp",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "WMApp"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/jihoonjang\/W-Matrix-iOS\/WMatrix\/Plugins\/WMApp\/1.0.1\/WMApp\/WMAppPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 453,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jihoonjang\/W-Matrix-iOS\/WMatrix\/Plugins\/WMApp\/1.0.1\/WMApp\/WMAppPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 858,
+      "length": 28,
+      "value": "\"CFBundleShortVersionString\""
+    },
+    {
+      "filePath": "\/Users\/jihoonjang\/W-Matrix-iOS\/WMatrix\/Plugins\/WMApp\/1.0.1\/WMApp\/WMAppPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 941,
+      "length": 17,
+      "value": "\"CFBundleVersion\""
+    },
+    {
+      "filePath": "\/Users\/jihoonjang\/W-Matrix-iOS\/WMatrix\/Plugins\/WMApp\/1.0.1\/WMApp\/WMAppPlugin.swift",
+      "kind": "Dictionary",
+      "offset": 1228,
+      "length": 36,
+      "value": "[(\"errorMsg\", \"Fail get version Info\")]"
+    },
+    {
+      "filePath": "\/Users\/jihoonjang\/W-Matrix-iOS\/WMatrix\/Plugins\/WMApp\/1.0.1\/WMApp\/WMAppPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 1576,
+      "length": 9,
+      "value": "\"version\""
+    },
+    {
+      "filePath": "\/Users\/jihoonjang\/W-Matrix-iOS\/WMatrix\/Plugins\/WMApp\/1.0.1\/WMApp\/WMAppPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 1616,
+      "length": 13,
+      "value": "\"versionCode\""
+    },
+    {
+      "filePath": "\/Users\/jihoonjang\/W-Matrix-iOS\/WMatrix\/Plugins\/WMApp\/1.0.1\/WMApp\/WMAppPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 2448,
+      "length": 14,
+      "value": "\"cancelButton\""
+    },
+    {
+      "filePath": "\/Users\/jihoonjang\/W-Matrix-iOS\/WMatrix\/Plugins\/WMApp\/1.0.1\/WMApp\/WMAppPlugin.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2476,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/jihoonjang\/W-Matrix-iOS\/WMatrix\/Plugins\/WMApp\/1.0.1\/WMApp\/WMAppPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 2517,
+      "length": 7,
+      "value": "\"popup\""
+    },
+    {
+      "filePath": "\/Users\/jihoonjang\/W-Matrix-iOS\/WMatrix\/Plugins\/WMApp\/1.0.1\/WMApp\/WMAppPlugin.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2538,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jihoonjang\/W-Matrix-iOS\/WMatrix\/Plugins\/WMApp\/1.0.1\/WMApp\/WMAppPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 2579,
+      "length": 9,
+      "value": "\"message\""
+    },
+    {
+      "filePath": "\/Users\/jihoonjang\/W-Matrix-iOS\/WMatrix\/Plugins\/WMApp\/1.0.1\/WMApp\/WMAppPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 2650,
+      "length": 25,
+      "value": "\"APPFINISH_ALERT_MESSAGE\""
+    },
+    {
+      "filePath": "\/Users\/jihoonjang\/W-Matrix-iOS\/WMatrix\/Plugins\/WMApp\/1.0.1\/WMApp\/WMAppPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 2816,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jihoonjang\/W-Matrix-iOS\/WMatrix\/Plugins\/WMApp\/1.0.1\/WMApp\/WMAppPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 3066,
+      "length": 22,
+      "value": "\"APPFINISH_ALERT_DONE\""
+    },
+    {
+      "filePath": "\/Users\/jihoonjang\/W-Matrix-iOS\/WMatrix\/Plugins\/WMApp\/1.0.1\/WMApp\/WMAppPlugin.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3509,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jihoonjang\/W-Matrix-iOS\/WMatrix\/Plugins\/WMApp\/1.0.1\/WMApp\/WMAppPlugin.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3734,
+      "length": 3,
+      "value": "500"
+    },
+    {
+      "filePath": "\/Users\/jihoonjang\/W-Matrix-iOS\/WMatrix\/Plugins\/WMApp\/1.0.1\/WMApp\/WMAppPlugin.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3784,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/jihoonjang\/W-Matrix-iOS\/WMatrix\/Plugins\/WMApp\/1.0.1\/WMApp\/WMAppPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 4025,
+      "length": 24,
+      "value": "\"APPFINISH_ALERT_CANCEL\""
+    },
+    {
+      "filePath": "\/Users\/jihoonjang\/W-Matrix-iOS\/WMatrix\/Plugins\/WMApp\/1.0.1\/WMApp\/WMAppPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 4480,
+      "length": 10,
+      "value": "\"errorMsg\""
+    },
+    {
+      "filePath": "\/Users\/jihoonjang\/W-Matrix-iOS\/WMatrix\/Plugins\/WMApp\/1.0.1\/WMApp\/WMAppPlugin.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4799,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jihoonjang\/W-Matrix-iOS\/WMatrix\/Plugins\/WMApp\/1.0.1\/WMApp\/WMAppPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 5145,
+      "length": 34,
+      "value": "\"Not found visible viewcontroller\""
+    },
+    {
+      "filePath": "\/Users\/jihoonjang\/W-Matrix-iOS\/WMatrix\/Plugins\/WMApp\/1.0.1\/WMApp\/WMAppPlugin.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5383,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jihoonjang\/W-Matrix-iOS\/WMatrix\/Plugins\/WMApp\/1.0.1\/WMApp\/WMAppPlugin.swift",
+      "kind": "FloatLiteral",
+      "offset": 5643,
+      "length": 3,
+      "value": "0.1"
+    },
+    {
+      "filePath": "\/Users\/jihoonjang\/W-Matrix-iOS\/WMatrix\/Plugins\/WMApp\/1.0.1\/WMApp\/WMAppPlugin.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5655,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/jihoonjang\/W-Matrix-iOS\/WMatrix\/Plugins\/WMApp\/1.0.1\/WMApp\/WMAppPlugin.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6043,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/jihoonjang\/W-Matrix-iOS\/WMatrix\/Plugins\/WMApp\/1.0.1\/WMApp\/WMAppPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 6107,
+      "length": 11,
+      "value": "\"appScheme\""
+    },
+    {
+      "filePath": "\/Users\/jihoonjang\/W-Matrix-iOS\/WMatrix\/Plugins\/WMApp\/1.0.1\/WMApp\/WMAppPlugin.swift",
+      "kind": "Dictionary",
+      "offset": 6431,
+      "length": 45,
+      "value": "[(\"errorMsg\", \"Required parameter not defined\")]"
+    },
+    {
+      "filePath": "\/Users\/jihoonjang\/W-Matrix-iOS\/WMatrix\/Plugins\/WMApp\/1.0.1\/WMApp\/WMAppPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 6762,
+      "length": 11,
+      "value": "\"gotoStore\""
+    },
+    {
+      "filePath": "\/Users\/jihoonjang\/W-Matrix-iOS\/WMatrix\/Plugins\/WMApp\/1.0.1\/WMApp\/WMAppPlugin.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6787,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jihoonjang\/W-Matrix-iOS\/WMatrix\/Plugins\/WMApp\/1.0.1\/WMApp\/WMAppPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 7563,
+      "length": 13,
+      "value": "\"storeScheme\""
+    },
+    {
+      "filePath": "\/Users\/jihoonjang\/W-Matrix-iOS\/WMatrix\/Plugins\/WMApp\/1.0.1\/WMApp\/WMAppPlugin.swift",
+      "kind": "Dictionary",
+      "offset": 7911,
+      "length": 45,
+      "value": "[(\"errorMsg\", \"Required parameter not defined\")]"
+    },
+    {
+      "filePath": "\/Users\/jihoonjang\/W-Matrix-iOS\/WMatrix\/Plugins\/WMApp\/1.0.1\/WMApp\/WMAppPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 8374,
+      "length": 9,
+      "value": "\"appName\""
+    },
+    {
+      "filePath": "\/Users\/jihoonjang\/W-Matrix-iOS\/WMatrix\/Plugins\/WMApp\/1.0.1\/WMApp\/WMAppPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 8399,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jihoonjang\/W-Matrix-iOS\/WMatrix\/Plugins\/WMApp\/1.0.1\/WMApp\/WMAppPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 8471,
+      "length": 21,
+      "value": "\"APP_INSTALL_MESSAGE\""
+    },
+    {
+      "filePath": "\/Users\/jihoonjang\/W-Matrix-iOS\/WMatrix\/Plugins\/WMApp\/1.0.1\/WMApp\/WMAppPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 8497,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jihoonjang\/W-Matrix-iOS\/WMatrix\/Plugins\/WMApp\/1.0.1\/WMApp\/WMAppPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 8685,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jihoonjang\/W-Matrix-iOS\/WMatrix\/Plugins\/WMApp\/1.0.1\/WMApp\/WMAppPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 8930,
+      "length": 22,
+      "value": "\"APPFINISH_ALERT_DONE\""
+    },
+    {
+      "filePath": "\/Users\/jihoonjang\/W-Matrix-iOS\/WMatrix\/Plugins\/WMApp\/1.0.1\/WMApp\/WMAppPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 8957,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jihoonjang\/W-Matrix-iOS\/WMatrix\/Plugins\/WMApp\/1.0.1\/WMApp\/WMAppPlugin.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9120,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jihoonjang\/W-Matrix-iOS\/WMatrix\/Plugins\/WMApp\/1.0.1\/WMApp\/WMAppPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 9463,
+      "length": 10,
+      "value": "\"errorMsg\""
+    },
+    {
+      "filePath": "\/Users\/jihoonjang\/W-Matrix-iOS\/WMatrix\/Plugins\/WMApp\/1.0.1\/WMApp\/WMAppPlugin.swift",
+      "kind": "Dictionary",
+      "offset": 9885,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/jihoonjang\/W-Matrix-iOS\/WMatrix\/Plugins\/WMApp\/1.0.1\/WMApp\/WMAppPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 10217,
+      "length": 24,
+      "value": "\"APPFINISH_ALERT_CANCEL\""
+    },
+    {
+      "filePath": "\/Users\/jihoonjang\/W-Matrix-iOS\/WMatrix\/Plugins\/WMApp\/1.0.1\/WMApp\/WMAppPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 10246,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jihoonjang\/W-Matrix-iOS\/WMatrix\/Plugins\/WMApp\/1.0.1\/WMApp\/WMAppPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 10643,
+      "length": 10,
+      "value": "\"errorMsg\""
+    },
+    {
+      "filePath": "\/Users\/jihoonjang\/W-Matrix-iOS\/WMatrix\/Plugins\/WMApp\/1.0.1\/WMApp\/WMAppPlugin.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10946,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jihoonjang\/W-Matrix-iOS\/WMatrix\/Plugins\/WMApp\/1.0.1\/WMApp\/WMAppPlugin.swift",
+      "kind": "BooleanLiteral",
+      "offset": 11283,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/jihoonjang\/W-Matrix-iOS\/WMatrix\/Plugins\/WMApp\/1.0.1\/WMApp\/WMAppPlugin.swift",
+      "kind": "Dictionary",
+      "offset": 11623,
+      "length": 48,
+      "value": "[(\"errorMsg\", \"Not found visible viewcontroller\")]"
+    },
+    {
+      "filePath": "\/Users\/jihoonjang\/W-Matrix-iOS\/WMatrix\/Plugins\/WMApp\/1.0.1\/WMApp\/WMAppPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 12216,
+      "length": 10,
+      "value": "\"errorMsg\""
+    },
+    {
+      "filePath": "\/Users\/jihoonjang\/W-Matrix-iOS\/WMatrix\/Plugins\/WMApp\/1.0.1\/WMApp\/WMAppPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 12736,
+      "length": 10,
+      "value": "\"errorMsg\""
+    },
+    {
+      "filePath": "\/Users\/jihoonjang\/W-Matrix-iOS\/WMatrix\/Plugins\/WMApp\/1.0.1\/WMApp\/WMAppPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 13270,
+      "length": 23,
+      "value": "\"inswave.wmatrix.WMApp\""
+    },
+    {
+      "filePath": "\/Users\/jihoonjang\/W-Matrix-iOS\/WMatrix\/Plugins\/WMApp\/1.0.1\/WMApp\/Extensions.swift",
+      "kind": "FloatLiteral",
+      "offset": 593,
+      "length": 6,
+      "value": "1000.0"
+    },
+    {
+      "filePath": "\/Users\/jihoonjang\/W-Matrix-iOS\/WMatrix\/Plugins\/WMApp\/1.0.1\/WMApp\/Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 726,
+      "length": 4,
+      "value": "1000"
+    }
+  ]
+}
