@@ -11,33 +11,29 @@ import ComposableArchitecture
 
 struct ContentView: View {
     @Environment(\.scenePhase) var scenePhase
-    @StateObject var matrixVM: MatrixViewModel = MatrixViewModel()
-    @State var store = Store(initialState: WMatrixState.State()){
+//    @StateObject var matrixVM: MatrixViewModel = MatrixViewModel()
+    @State var store = Store(initialState: WMatrixState.State(id: UUID())){
         WMatrixState()
             ._printChanges()
     }
     
-    
     var body: some View {
+        WithViewStore(self.store, observe: { $0 }) { viewStore in
         ZStack {
+           
+            ComposableWebView(store: self.store)
             
-            if matrixVM.model.showLoading {
+            if viewStore.showLoadingView {
                 LoadingView(image: Image("logo"))
-                    .alert("", isPresented:$matrixVM.model.error) {
+                    .alert("", isPresented: .constant(viewStore.isError)) {
                         Button("확인") { exit(0) }
                     } message: {
-                        Text("code:\(matrixVM.model.errorCode)\nmessage:\(matrixVM.model.errorMessage)" )
+                        Text("code:\(viewStore.errorCode)\nmessage:\(viewStore.errorMessage)" )
                     }
-            } else {
-//                ForEach(matrixVM.webViews, id:\.self) { webView in
-//                    WMWebView(webView: webView)
-//                        .ignoresSafeArea(.keyboard)
-//                }
-                
             }
             
-            CounterView(store: TemplateSwiftUIApp.store)
         }
+    }
     }
 }
 
