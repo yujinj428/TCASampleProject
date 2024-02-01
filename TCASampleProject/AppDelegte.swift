@@ -17,7 +17,8 @@ class AppDelegate: NSObject, UIApplicationDelegate, ObservableObject {
      
         Task {
             await MainActor.run {
-                TemplateSwiftUIApp.matrixStore.send(WMatrixState.Action.initMatrix(delegate: self))
+                let webviewOptions = WebViewOptions() // webview 및 option 수정이 필요할 경우 여기서 set
+                TemplateSwiftUIApp.matrixStore.send(WMatrixState.Action.initMatrix(delegate: self, options: webviewOptions))
             }
         }
         
@@ -45,7 +46,6 @@ extension AppDelegate: WMatrixProtocol {
     func onMatrixWebViewCreated(tag: String, matrixWebView: WMatrixMobile.WMatrixWebView?) {
         Task {
             await MainActor.run {
-//                TemplateSwiftUIApp.matrixStore.send(WMatrixState.Action.onMatrixWebViewCreated(tag: tag, matrixWebView: matrixWebView)) // 이렇게 웹뷰를 넘기니까 crash 나요
                 if let webview = matrixWebView {
                     self.webviews.append(webview)
                     webview.loadStartPage()

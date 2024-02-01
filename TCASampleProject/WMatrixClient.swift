@@ -15,7 +15,7 @@ import ComposableArchitecture
 
 @DependencyClient
 struct WMatrixClient {
-    var initWMatrix: @Sendable (WMatrixProtocol) async -> Void
+    var initWMatrix: @Sendable (WMatrixProtocol, WebViewOptions) async -> Void
     var createWMatrix: @Sendable (ServerGroup) async -> Void
     var startWMatrix: @Sendable (String) async -> Void
     var makeWebView: @Sendable (String) async -> Void
@@ -25,16 +25,18 @@ extension WMatrixClient: DependencyKey {
     static var liveValue: Self {
         let manager = WMatrixManager()
         return Self(
-            initWMatrix: { delegate in
-            await manager.inject(wmatrixDelegate: delegate)
-        }, createWMatrix: { group in
-            await manager.create(group: group)
-        }, startWMatrix: { tag in
-            await manager.start(tag: tag)
-        },
+            initWMatrix: { delegate, options in
+                await manager.initializeWMatrix(delegate: delegate, options: options)
+            }, 
+            createWMatrix: { group in
+                await manager.create(group: group)
+            }, 
+            startWMatrix: { tag in
+                await manager.start(tag: tag)
+            },
             makeWebView: { tag in
-            await manager.makeWebview(tag: tag)
-        })
+                await manager.makeWebview(tag: tag)
+            })
     }
 }
 
@@ -49,13 +51,12 @@ private actor WMatrixManager: ObservableObject {
  
     private var wmatrix: WMatrix?
     private(set) var webviews: [WMatrixWebView] = []
-    private var serverGroup: [String] = []
-    private var startGroup: [String] = []
-    private var makeGroup: [String] = []
+    private var options: WebViewOptions?
     
-    func inject(wmatrixDelegate: WMatrixProtocol) {
+    func initializeWMatrix(delegate: WMatrixProtocol, options: WebViewOptions) async {
         if self.wmatrix == nil {
-            self.wmatrix = WMatrix(delegate: wmatrixDelegate)
+            self.wmatrix = WMatrix(delegate: delegate)
+            self.options = options
             
             let useServerSelectScreen:Bool = TargetInfo.getUseSeverSelect()
             if useServerSelectScreen {
@@ -64,40 +65,27 @@ private actor WMatrixManager: ObservableObject {
             }
             
             if let serverGroup = self.wmatrix?.getStartServerGroupFromConfig() {
-                TemplateSwiftUIApp.matrixStore.send(WMatrixState.Action.onMatrixGroupSelect(group: serverGroup))
+                _ = await MainActor.run {
+                    TemplateSwiftUIApp.matrixStore.send(WMatrixState.Action.onMatrixGroupSelect(group: serverGroup))
+                }
             }
         }
     }
     
     func create(group: ServerGroup) {
-        if !self.serverGroup.contains(group.groupName) {
-            self.serverGroup.append(group.groupName)
-            group.serverList.forEach { serverData in
-                let options = WebViewOptions()
-                self.wmatrix?.create(tag: serverData.name, serverData: serverData, webViewOptions: options)
-            }
+        group.serverList.forEach { serverData in
+            self.wmatrix?.create(tag: serverData.name, serverData: serverData, webViewOptions: self.options ?? WebViewOptions())
         }
     }
     
     func start(tag: String) {
-        if !self.startGroup.contains(tag) {
-            self.startGroup.append(tag)
-            self.wmatrix?.start(tag: tag)
-        }
+        self.wmatrix?.start(tag: tag)
     }
     
     func makeWebview(tag: String) {
-        if !self.makeGroup.contains(tag) {
-            self.makeGroup.append(tag)
-            self.wmatrix?.makeWebView(tag: tag, async: true)
-        }
+        self.wmatrix?.makeWebView(tag: tag, async: true)
     }
-    
-    func inject(webview: WMatrixWebView) {
-        if !self.webviews.contains(webview) {
-            self.webviews.append(webview)
-        }
-    }
+   
 }
 
 

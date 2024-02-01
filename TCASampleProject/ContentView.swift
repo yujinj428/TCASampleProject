@@ -15,27 +15,27 @@ struct ContentView: View {
     
     var body: some View {
         WithViewStore(TemplateSwiftUIApp.matrixStore, observe: { $0 }) { viewStore in
-        ZStack {
             
-            ForEach(appDelegate.webviews, id: \.self) { webview in
-                WMWebView(webView: webview)
-            }
-                
-            if viewStore.showLoadingView {
-                LoadingView(image: Image("logo"))
-                    .alert("", isPresented: .constant(viewStore.isError)) {
-                        Button("확인") { exit(0) }
-                    } message: {
-                        Text("code:\(viewStore.errorCode)\nmessage:\(viewStore.errorMessage)" )
+            ZStack {
+    
+                if appDelegate.webviews.count > 0 {
+                    ForEach(appDelegate.webviews, id: \.self) { webview in
+                        WMWebView(webView: webview)
                     }
+                }
+                    
+                if viewStore.showLoadingView {
+                    LoadingView(image: Image("logo"))
+                        .alert(viewStore.alert?.title ?? "", isPresented: .constant(viewStore.matrixPhase == .error)) {
+                            Button("확인") { exit(0) }
+                        } message: {
+                            Text(viewStore.alert?.message ?? "")
+                        }
+                }
+                
             }
             
-        }
-        .onReceive(appDelegate.$webviews, perform: { value in
-            print("I received a webview")
-        })
-            
-    }
+        } // viewStore block end
     }
 }
 

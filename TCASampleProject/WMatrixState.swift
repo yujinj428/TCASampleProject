@@ -11,22 +11,40 @@ import ComposableArchitecture
 @Reducer
 struct WMatrixState {
     
+    struct Alert: Equatable {
+        typealias Handler = () -> Void
+        
+        let uuid = UUID()
+        let title: String
+        let message: String
+        let action: Handler
+        
+        static func == (lhs: WMatrixState.Alert, rhs: WMatrixState.Alert) -> Bool {
+            lhs.uuid == rhs.uuid
+        }
+    }
+    
+    enum MatrixLifeCycle: Equatable {
+        case none
+        case created
+        case started
+        case error
+    }
+    
     struct State: Equatable {
+        var matrixPhase: MatrixLifeCycle = .none
         var showLoadingView: Bool = true
-        var isError: Bool = false
-        var errorCode: String = ""
-        var errorMessage: String = ""
-
+        var alert: Alert?
     }
     
     enum Action {
-        case initMatrix(delegate: WMatrixProtocol)
+        case initMatrix(delegate: WMatrixProtocol, options: WebViewOptions)
         case onMatrixCreated(tag: String)
         case onMatrixStarted(tag: String)
         case onMatrixGroupSelect(group: WMatrixMobile.ServerGroup)
-        case onMatrixWebViewCreated(tag: String, matrixWebView: WMatrixWebView?)
         case onDismissLoadingView
         case onMatrixError(tag: String, error: WMatrixMobile.MatrixError)
+        case onAlert(title: String, message: String)
     }
     
     @Dependency(\.wmatrixClient) var wmatrixClient
@@ -34,43 +52,45 @@ struct WMatrixState {
     var body: some Reducer<State, Action> {
         Reduce { state, action in
             switch action {
-            case  let .initMatrix(delegate):
+                
+            case let .initMatrix(delegate, options):
                 
                 return .run { _ in
-                    await self.wmatrixClient.initWMatrix(delegate)
+                    await self.wmatrixClient.initWMatrix(delegate, options)
                 }
  
             case let .onMatrixGroupSelect(serverGroup):
-                
                 
                 return .run { _ in
                     await self.wmatrixClient.createWMatrix(serverGroup)
                 }
            
             case let .onMatrixCreated(tag):
-            
+                state.matrixPhase = .created
                 return .run { _ in
                     await self.wmatrixClient.startWMatrix(tag)
                 }
                 
             case let .onMatrixStarted(tag):
- 
+                state.matrixPhase = .started
                 return .run { _ in
                     await self.wmatrixClient.makeWebView(tag)
                 }
-                
-            case let .onMatrixWebViewCreated(tag, matrixWebView): // 여기로 webview가 넘어오면 터져요
-                print("makewebview: \(tag)")
-                return .none
                 
             case .onDismissLoadingView:
                 state.showLoadingView = false
                 return .none
                 
             case let .onMatrixError(_, error):
-                state.isError = true
-                state.errorCode = error.errorCode
-                state.errorMessage = error.errorMessage
+                state.matrixPhase = .error
+                return .run { send in
+                    await send(.onAlert(title: error.errorCode, message: error.errorMessage))
+                }
+                
+            case let .onAlert(title, message):
+                state.alert = Alert(title: title, message: message) {
+                    print("alert handler")
+                }
                 return .none
             }
             
