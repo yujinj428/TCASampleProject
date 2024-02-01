@@ -11,18 +11,16 @@ import ComposableArchitecture
 
 struct ContentView: View {
     @Environment(\.scenePhase) var scenePhase
-//    @StateObject var matrixVM: MatrixViewModel = MatrixViewModel()
-    @State var store = Store(initialState: WMatrixState.State(id: UUID())){
-        WMatrixState()
-            ._printChanges()
-    }
+    @EnvironmentObject var appDelegate: AppDelegate // Access the AppDelegate as an environment object
     
     var body: some View {
-        WithViewStore(self.store, observe: { $0 }) { viewStore in
+        WithViewStore(TemplateSwiftUIApp.matrixStore, observe: { $0 }) { viewStore in
         ZStack {
-           
-            ComposableWebView(store: self.store)
             
+            ForEach(appDelegate.webviews, id: \.self) { webview in
+                WMWebView(webView: webview)
+            }
+                
             if viewStore.showLoadingView {
                 LoadingView(image: Image("logo"))
                     .alert("", isPresented: .constant(viewStore.isError)) {
@@ -33,6 +31,10 @@ struct ContentView: View {
             }
             
         }
+        .onReceive(appDelegate.$webviews, perform: { value in
+            print("I received a webview")
+        })
+            
     }
     }
 }

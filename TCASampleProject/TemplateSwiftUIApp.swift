@@ -11,14 +11,18 @@ import ComposableArchitecture
 @main
 struct TemplateSwiftUIApp: App {
     @Environment(\.scenePhase) var scenePhase
-    static let store = Store(initialState: Counter.State()) {
-        Counter()
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    
+    static let matrixStore = Store(initialState: WMatrixState.State()){
+        WMatrixState()
             ._printChanges()
-      }
+    }
+    
     
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(appDelegate)
         }
     }
 }
