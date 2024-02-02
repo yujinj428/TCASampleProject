@@ -6,7 +6,7 @@
 	<dict>
 		<key>serverGroups</key>
 		<dict>
-			<key>Release</key>
+			<key>MultiDomain</key>
 			<array>
 				<dict>
 					<key>appID</key>
@@ -18,12 +18,48 @@
 					<key>url</key>
 					<string>https://mre.inswave.kr</string>
 				</dict>
+				<dict>
+					<key>appID</key>
+					<string>inswave.wmatrix.template</string>
+					<key>localWebServerPort</key>
+					<string>24681</string>
+					<key>name</key>
+					<string>Sample1</string>
+					<key>url</key>
+					<string>http://whybrid.inswave.kr:8088</string>
+				</dict>
+			</array>
+			<key>Template</key>
+			<array>
+				<dict>
+					<key>appID</key>
+					<string>inswave.wmatrix.template</string>
+					<key>localWebServerPort</key>
+					<string>24681</string>
+					<key>name</key>
+					<string>Sample1</string>
+					<key>url</key>
+					<string>http://whybrid.inswave.kr:8088</string>
+				</dict>
+			</array>
+			<key>MRE</key>
+			<array>
+				<dict>
+					<key>appID</key>
+					<string>inswave.wmatrix.mre</string>
+					<key>localWebServerPort</key>
+					<string>24681</string>
+					<key>name</key>
+					<string>Sample1</string>
+					<key>url</key>
+					<string>https://mre.inswave.kr</string>
+				</dict>
 			</array>
 		</dict>
 		<key>startServerGroupName</key>
 		<string>Release</string>
 		<key>useServerSelectScreen</key>
-		<false/>
+		<true/>
 	</dict>
 	<key>Template_Debug</key>
 	<dict>

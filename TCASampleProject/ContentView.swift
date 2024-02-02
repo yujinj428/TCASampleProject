@@ -26,7 +26,7 @@ struct ContentView: View {
                     
                 if viewStore.showLoadingView {
                     LoadingView(image: Image("logo"))
-                        .alert(viewStore.alert?.title ?? "", isPresented: .constant(viewStore.matrixPhase == .error)) {
+                        .alert(viewStore.alert?.title ?? "", isPresented: .constant(viewStore.showAlert)) {
                             Button("확인") { exit(0) }
                         } message: {
                             Text(viewStore.alert?.message ?? "")

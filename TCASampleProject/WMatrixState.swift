@@ -34,6 +34,7 @@ struct WMatrixState {
     struct State: Equatable {
         var matrixPhase: MatrixLifeCycle = .none
         var showLoadingView: Bool = true
+        var showAlert: Bool = false
         var alert: Alert?
     }
     
@@ -84,13 +85,14 @@ struct WMatrixState {
             case let .onMatrixError(_, error):
                 state.matrixPhase = .error
                 return .run { send in
-                    await send(.onAlert(title: error.errorCode, message: error.errorMessage))
+                    await send(.onAlert(title: error.errorMessage, message: error.errorReason ?? error.errorCode))
                 }
                 
             case let .onAlert(title, message):
                 state.alert = Alert(title: title, message: message) {
                     print("alert handler")
                 }
+                state.showAlert = true
                 return .none
             }
             

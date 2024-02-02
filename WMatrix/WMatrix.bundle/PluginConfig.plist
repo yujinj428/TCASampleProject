@@ -111,6 +111,14 @@
 	<array>
 		<dict>
 			<key>ClassName</key>
+			<string>NativeCommonPlugin</string>
+			<key>Name</key>
+			<string>NativeCommonPlugin</string>
+			<key>Onload</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>ClassName</key>
 			<string>WMAppPlugin</string>
 			<key>Name</key>
 			<string>WMAppPlugin</string>

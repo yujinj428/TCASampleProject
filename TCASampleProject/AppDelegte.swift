@@ -44,14 +44,22 @@ extension AppDelegate: WMatrixProtocol {
     }
     
     func onMatrixWebViewCreated(tag: String, matrixWebView: WMatrixMobile.WMatrixWebView?) {
-        Task {
-            await MainActor.run {
-                if let webview = matrixWebView {
-                    self.webviews.append(webview)
-                    webview.loadStartPage()
-                }
+
+        if let webview = matrixWebView {
+            self.webviews.append(webview)
+            
+            if #available(iOS 16.4, *) {
+                webview.isInspectable = true
             }
+            
+            if let nativeCommonPlugin = webview.pluginObjects["NativeCommonPlugin"] as? NativeCommonPlugin {
+              
+            }
+            
+            
+            webview.loadStartPage()
         }
+          
     }
     
     func onMatrixGroupSelect(group: WMatrixMobile.ServerGroup) {
