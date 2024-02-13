@@ -7,49 +7,139 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "A60D47CB-CF5D-48B0-BCA6-65964C54B659"
-            shouldBeEnabled = "Yes"
+            uuid = "EA58DC81-9BF4-4748-87DC-EA8432641C4D"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TCASampleProject/WMatrixClient.swift"
+            filePath = "TCASampleProject/WMatrixState.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "77"
-            endingLineNumber = "77"
-            landmarkName = "create(group:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "CF854273-9368-443C-97B2-F1689222BF35"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TCASampleProject/WMatrixClient.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "82"
-            endingLineNumber = "82"
-            landmarkName = "start(tag:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "194DE873-B7BF-486C-82B6-409699B5C9A6"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TCASampleProject/WMatrixClient.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "86"
-            endingLineNumber = "86"
-            landmarkName = "makeWebview(tag:)"
-            landmarkType = "7">
+            startingLineNumber = "101"
+            endingLineNumber = "101"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "EA58DC81-9BF4-4748-87DC-EA8432641C4D - 985c5ab1cae93b0f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #7 @Sendable (ComposableArchitecture.Send&lt;TCASampleProject.WMatrixState.Action&gt;) async -&gt; () in closure #1 (inout TCASampleProject.WMatrixState.State, TCASampleProject.WMatrixState.Action) -&gt; ComposableArchitecture.Effect&lt;TCASampleProject.WMatrixState.Action&gt; in TCASampleProject.WMatrixState.body.getter : some"
+                  moduleName = "TCASampleProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yujin/TCASampleProject/TCASampleProject/WMatrixState.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "101"
+                  endingLineNumber = "101"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  uuid = "EA58DC81-9BF4-4748-87DC-EA8432641C4D - b239a1d913abd98c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) suspend resume partial function for closure #7 @Sendable (ComposableArchitecture.Send&lt;TCASampleProject.WMatrixState.Action&gt;) async -&gt; () in closure #1 (inout TCASampleProject.WMatrixState.State, TCASampleProject.WMatrixState.Action) -&gt; ComposableArchitecture.Effect&lt;TCASampleProject.WMatrixState.Action&gt; in TCASampleProject.WMatrixState.body.getter : some"
+                  moduleName = "TCASampleProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yujin/TCASampleProject/TCASampleProject/WMatrixState.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "101"
+                  endingLineNumber = "101"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "EA58DC81-9BF4-4748-87DC-EA8432641C4D - d59528c15d647e0d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #7 @Sendable (ComposableArchitecture.Send&lt;TCASampleProject.WMatrixState.Action&gt;) async -&gt; () in closure #1 (inout TCASampleProject.WMatrixState.State, TCASampleProject.WMatrixState.Action) -&gt; ComposableArchitecture.Effect&lt;TCASampleProject.WMatrixState.Action&gt; in TCASampleProject.WMatrixState.body.getter : some"
+                  moduleName = "TCASampleProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yujin/TCASampleProject/TCASampleProject/WMatrixState.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "101"
+                  endingLineNumber = "101"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "EA58DC81-9BF4-4748-87DC-EA8432641C4D - f72afeaa6261c82"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for closure #7 @Sendable (ComposableArchitecture.Send&lt;TCASampleProject.WMatrixState.Action&gt;) async -&gt; () in closure #1 (inout TCASampleProject.WMatrixState.State, TCASampleProject.WMatrixState.Action) -&gt; ComposableArchitecture.Effect&lt;TCASampleProject.WMatrixState.Action&gt; in TCASampleProject.WMatrixState.body.getter : some"
+                  moduleName = "TCASampleProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yujin/TCASampleProject/TCASampleProject/WMatrixState.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "101"
+                  endingLineNumber = "101"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "EA58DC81-9BF4-4748-87DC-EA8432641C4D - 26ee3612efe0bd03"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for closure #7 @Sendable (ComposableArchitecture.Send&lt;TCASampleProject.WMatrixState.Action&gt;) async -&gt; () in closure #1 (inout TCASampleProject.WMatrixState.State, TCASampleProject.WMatrixState.Action) -&gt; ComposableArchitecture.Effect&lt;TCASampleProject.WMatrixState.Action&gt; in TCASampleProject.WMatrixState.body.getter : some"
+                  moduleName = "TCASampleProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yujin/TCASampleProject/TCASampleProject/WMatrixState.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "101"
+                  endingLineNumber = "101"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "EA58DC81-9BF4-4748-87DC-EA8432641C4D - 584bbd3a38bd5380"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(6) suspend resume partial function for closure #7 @Sendable (ComposableArchitecture.Send&lt;TCASampleProject.WMatrixState.Action&gt;) async -&gt; () in closure #1 (inout TCASampleProject.WMatrixState.State, TCASampleProject.WMatrixState.Action) -&gt; ComposableArchitecture.Effect&lt;TCASampleProject.WMatrixState.Action&gt; in TCASampleProject.WMatrixState.body.getter : some"
+                  moduleName = "TCASampleProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yujin/TCASampleProject/TCASampleProject/WMatrixState.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "101"
+                  endingLineNumber = "101"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "EA58DC81-9BF4-4748-87DC-EA8432641C4D - 72270422027ff001"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(7) suspend resume partial function for closure #7 @Sendable (ComposableArchitecture.Send&lt;TCASampleProject.WMatrixState.Action&gt;) async -&gt; () in closure #1 (inout TCASampleProject.WMatrixState.State, TCASampleProject.WMatrixState.Action) -&gt; ComposableArchitecture.Effect&lt;TCASampleProject.WMatrixState.Action&gt; in TCASampleProject.WMatrixState.body.getter : some"
+                  moduleName = "TCASampleProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yujin/TCASampleProject/TCASampleProject/WMatrixState.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "101"
+                  endingLineNumber = "101"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "EA58DC81-9BF4-4748-87DC-EA8432641C4D - 95848b4a4b399686"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(8) suspend resume partial function for closure #7 @Sendable (ComposableArchitecture.Send&lt;TCASampleProject.WMatrixState.Action&gt;) async -&gt; () in closure #1 (inout TCASampleProject.WMatrixState.State, TCASampleProject.WMatrixState.Action) -&gt; ComposableArchitecture.Effect&lt;TCASampleProject.WMatrixState.Action&gt; in TCASampleProject.WMatrixState.body.getter : some"
+                  moduleName = "TCASampleProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yujin/TCASampleProject/TCASampleProject/WMatrixState.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "101"
+                  endingLineNumber = "101"
+                  offsetFromSymbolStart = "40">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -19,8 +19,13 @@ struct ContentView: View {
             ZStack {
     
                 if appDelegate.webviews.count > 0 {
-                    ForEach(appDelegate.webviews, id: \.self) { webview in
-                        WMWebView(webView: webview)
+                    VStack {
+                        ForEach(appDelegate.webviews, id: \.self) { webview in
+                            WMWebView(webView: webview)
+                        }
+                        Button("native common trigger") {
+                            viewStore.send(.sendSuccessCallback)
+                        }
                     }
                 }
                     

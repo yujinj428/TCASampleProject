@@ -11,7 +11,18 @@ import ComposableArchitecture
 
 class AppDelegate: NSObject, UIApplicationDelegate, ObservableObject {
     
+    static var shared: AppDelegate?
+    
+    /*
+     wmatrix webview 객체와 플러그인 객체 관리
+    */
     @Published var webviews: [WMatrixWebView] = []
+    @Published var nativeCommonPlugin: NativeCommonPlugin?
+    
+    override init() {
+        super.init()
+        AppDelegate.shared = self
+    }
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
      
@@ -53,9 +64,8 @@ extension AppDelegate: WMatrixProtocol {
             }
             
             if let nativeCommonPlugin = webview.pluginObjects["NativeCommonPlugin"] as? NativeCommonPlugin {
-              
+                self.nativeCommonPlugin = nativeCommonPlugin
             }
-            
             
             webview.loadStartPage()
         }

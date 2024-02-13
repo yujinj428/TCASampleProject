@@ -46,6 +46,7 @@ struct WMatrixState {
         case onDismissLoadingView
         case onMatrixError(tag: String, error: WMatrixMobile.MatrixError)
         case onAlert(title: String, message: String)
+        case sendSuccessCallback
     }
     
     @Dependency(\.wmatrixClient) var wmatrixClient
@@ -94,6 +95,11 @@ struct WMatrixState {
                 }
                 state.showAlert = true
                 return .none
+                
+            case .sendSuccessCallback:
+                return .run { _ in
+                    await AppDelegate.shared?.nativeCommonPlugin?.sendSuccessCallback()
+                }
             }
             
         }
